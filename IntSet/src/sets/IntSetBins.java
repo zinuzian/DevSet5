@@ -9,7 +9,11 @@ public class IntSetBins {
 	int maxelems;
 	double time[];
 	
-	public IntSetBins(int maxelems, int maxval){
+	public IntSetBins(){
+		
+	}
+	
+	public void intSetimp(int maxelems, int maxval) {
 		this.maxval = maxval;
 		this.maxelems = maxelems;
 		IntSetBins = new ArrayList<Integer>(maxelems);
@@ -57,7 +61,19 @@ public class IntSetBins {
 		while(IntSetBins.size() < maxelems) {
 			insert(random.nextInt(maxval));
 		}
-		report();
 	}
 	
+	
+	///테스트 패키지에서 값을 참조하기 위한 get 함수 추가
+	public int getMaxelements() {
+		return maxelems;
+	}
+	
+	public int getMaxvalue() {
+		return maxval;
+	}
+	
+	public int getset(int i) {
+		return IntSetBins.get(i);
+	}
 }
