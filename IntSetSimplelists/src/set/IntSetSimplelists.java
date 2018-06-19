@@ -11,17 +11,18 @@ public class IntSetSimplelists {
 
 	private int max_element = 0;
 	private int max_value = 0;
-	private ArrayList<Integer> set = new ArrayList<Integer>();
+	private ArrayList<Integer> set = null;
 
 	public static void main(String[] args){
 		try {
 			File file = new File("output.txt");
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
-			IntSetSimplelists set = new IntSetSimplelists();
+			
 			Random random = new Random();
 			int maxValue = 10000000;
 			int maxElem = 100000;
+			IntSetSimplelists set = new IntSetSimplelists();
 			set.intSetImp(maxElem, maxValue);
 
 			for(int i=0;i<maxElem;i++){
@@ -49,11 +50,13 @@ public class IntSetSimplelists {
 			e.printStackTrace();
 		}
 	}
-
-
+	
 	public void intSetImp(int maxelems, int maxval){
+		if(maxelems >= maxval)
+			return;
 		this.max_element = maxelems;
 		this.max_value = maxval;
+		set = new ArrayList<Integer>();
 	}
 
 	public void insert(int element) {
@@ -70,6 +73,10 @@ public class IntSetSimplelists {
 		return this.set.size();
 	}
 
+	public ArrayList<Integer> getSet(){
+		return this.set;
+	}
+	
 	public Integer[] report(){
 
 		this.set.sort(new Comparator<Integer>(){
