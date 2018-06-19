@@ -7,11 +7,11 @@
  * maxelem = maxval/100, maxval/50, maxval/25
 
  1. maxval = 10^6 && maxelem = maxval/100
-    initialize :
-    insert :
-    report :
-    total :
-    space :
+ initialize :
+ insert :
+ report :
+ total :
+ space :
 
 2. maxval = 10^6 && maxelem = maxval/50
     initialize :
