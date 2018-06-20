@@ -53,25 +53,25 @@
  * maxelem = maxval/100, maxval/50, maxval/25
 
  1. maxval = 10^6 && maxelem = maxval/100
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize :0.0s
+ + insert :1.307s
+ + report :0.0s
+ + total :1.307s
+ + space :40000
 
 2. maxval = 10^6 && maxelem = maxval/50
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize :0.0s
+ + insert :10.081s
+ + report :0.0s
+ + total :10.081s
+ + space :80000
 
 3. maxval = 10^6 && maxelem = maxval/25
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize :0.0s
+ + insert :59.587s
+ + report :0.0s
+ + total :58.587s
+ + space :160000
 
 4. maxval = 10^8 && maxelem = maxval/100
  + initialize :
