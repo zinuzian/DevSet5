@@ -72,6 +72,8 @@ public class IntSetSimplelists {
 	}
 
 	public void insert(int element) {
+		if(set == null)
+			return;
 		int idx;
 		if(		(idx=this.contains(element)) < 0	||
 				this.set.size() >= this.max_element || 
@@ -83,6 +85,9 @@ public class IntSetSimplelists {
 	}
 
 	public int size() {
+		if(set == null) {
+			return -1;
+		}
 		return this.set.size();
 	}
 
@@ -90,7 +95,9 @@ public class IntSetSimplelists {
 		return this.set;
 	}
 
-	private int contains(int k) {	//binary search for binary insert
+	public int contains(int k) {	//binary search for binary insert
+		if(set == null)
+			return -2;
 		if (set.size() == 0) 
 			return 0;
 
@@ -115,7 +122,9 @@ public class IntSetSimplelists {
 	}
 
 	public Integer[] report(){
-
+		if(set == null) {
+			return null;
+		}
 		//		this.set.sort(new Comparator<Integer>() {
 		//
 		//			@Override

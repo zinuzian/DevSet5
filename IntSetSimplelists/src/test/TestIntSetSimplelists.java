@@ -153,5 +153,29 @@ public class TestIntSetSimplelists extends TestCase{
 			assertTrue(report[i] < report[i+1]);
 		}
 	}
+	
+	@Test
+	public void testContains() {
+		set = new IntSetSimplelists();
+		set.intSetImp(10, 100);
+		
+		set.insert(10);
+		assertEquals(set.contains(10),-1);	//exists
+		assertEquals(set.contains(11),1);	//should be inserted to idx=1
+		
+		set.insert(11);
+		assertEquals(set.contains(11),-1);	//exists
+	}
+	
+	@Test
+	public void testInit() {
+		set = new IntSetSimplelists();
+		assertEquals(set.contains(10),-2);	//LinkedList not initialized
+		set.insert(10);
+		assertEquals(set.size(),-1);	//not initialized
+		set.intSetImp(10, 100);
+		assertEquals(set.contains(10),0);	//not contains and should be inserted to idx=0
+		assertEquals(set.size(),0);
+	}
 
 }
