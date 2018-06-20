@@ -99,46 +99,46 @@
  * maxelem = maxval/100, maxval/50, maxval/25
 
  1. maxval = 10^6 && maxelem = maxval/100
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.000s
+ + insert : 0.008s
+ + report : 0.002s
+ + total : 0.010s
+ + space : 554384byte (0.53MB)
 
 2. maxval = 10^6 && maxelem = maxval/50
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.000s
+ + insert : 0.013s
+ + report : 0.003s
+ + total : 0.016s
+ + space : 650368byte (0.62MB)
 
 3. maxval = 10^6 && maxelem = maxval/25
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.000s
+ + insert : 0.024s
+ + report : 0.006s
+ + total : 0.030s
+ + space : 1951080byte (1.86MB)
 
 4. maxval = 10^8 && maxelem = maxval/100
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.001s
+ + insert : 0.543s
+ + report : 0.049s
+ + total : 0.593s
+ + space : 55553200byte (52.98MB)
 
 5. maxval = 10^8 && maxelem = maxval/50
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.000s
+ + insert : 1.728s
+ + report : 0.066s
+ + total : 1.794s
+ + space : 109176256byte (104.12MB)
 
 6. maxval = 10^8 && maxelem = maxval/25
- + initialize :
- + insert :
- + report :
- + total :
- + space :
+ + initialize : 0.001s
+ + insert : 4.522s
+ + report : 0.151s
+ + total : 4.674s
+ + space : 217936056byte (207.84MB)
 
 ## Bit vectors
  * maxval = 10^6, 10^8
