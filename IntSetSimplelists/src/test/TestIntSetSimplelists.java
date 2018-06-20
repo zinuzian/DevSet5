@@ -69,7 +69,7 @@ public class TestIntSetSimplelists extends TestCase{
 
 			System.out.println(s4="Total time elapsed : "+total/1000.0 +"sec");
 
-			
+
 			System.out.println(s5="Space Complexity:" + format.format(tot/(1024*1024.0))+"\n\n"); 
 			// output file generation
 			bw.write(s1+"\n");
@@ -101,23 +101,23 @@ public class TestIntSetSimplelists extends TestCase{
 		return null;
 	}
 
-		@Test
-		public void test1000000() {
-			int n=1000000;
-			testTimeElapsed(n,n/25);
-			testTimeElapsed(n,n/100);
-			testTimeElapsed(n,n/50);
-			
-	
-			
-		}
-	//	@Test
-	//	public void test100000000() {
-	//		int n=100000000;
-	//		testTimeElapsed(n,n/100);
-	//		testTimeElapsed(n,n/50);
-	//		testTimeElapsed(n,n/25);
-	//	}
+//	@Test
+//	public void test1000000() {
+//		int n=1000000;
+//		testTimeElapsed(n,n/25);
+//		testTimeElapsed(n,n/100);
+//		testTimeElapsed(n,n/50);
+//
+//
+//
+//	}
+//	@Test
+//	public void test100000000() {
+//		int n=100000000;
+//		testTimeElapsed(n,n/100);
+//		testTimeElapsed(n,n/50);
+//		testTimeElapsed(n,n/25);
+//	}
 	@Test
 	public void testReport() {
 		int n=1000000;
